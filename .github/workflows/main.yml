@@ -2,7 +2,9 @@ on:
   push:
     branches:
       - 'main'
-
+defaults:
+  run:
+    working-directory: user-service
 jobs:
   docker:
       name: Publish - Docker Hub
